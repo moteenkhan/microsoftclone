@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+overflow-X:hidden;
+}
+.main-body{
+width:90%;
+margin:0 auto;
+}
+.logo{
+height:25px;
+}
+
+ .carousel-inner img {
+    width: 100%;
+    height:520px;
+  }
+.carousel-inner{
+position:relative;
+}
+.carousel-caption{
+position:absolute;
+top:10%;
+left:7%!important;
+}
+
+.carousel-caption h3,p{
+text-align:left;
+color:black
+}
+.carousel-caption button{
+border:none;
+position:absolute;
+background:black;
+color:white;
+left:0;
+font-size:15px;
+padding:10px 20px;
+}
+main{
+margin:40px 0;
+
+}
+.card{
+border:none!important;
+}
+.card-img-top{
+height:170px;
+}
+.mstyle{
+width:100%;
+height:450px;
+background-image:linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0)),url("section.jpg");
+background-repeat:no-repeat;
+background-size:100% 100%;
+margin:20px 0 40px 0;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:flex-start;
+color:white;
+padding-left:75px;
+}
+
+.mstore p{
+color:white;
+}
+.mstore button{
+color:black;
+background:white;
+padding:10px 20px;
+font-size:15px;
+font-weight:bold;
+text-transform:uppercase;
+}
+.cardsec{
+margin:50px 0;
+}
+#highlight{
+color:grey;
+font-size:14px;
+font-weight:bold;
+}
+.fa-instagram{
+color:#e95950;
+}
+
+.fa-facebook{
+color:#4267B2;
+}
+.fa-twitter{
+color:fa-twitter;
+}
+
+
+
+footer{
+background:#f2f2f2;
+padding:40px 0;
+}
+footer ul li{
+list-style:none;
+}
+footer a{
+text-decoration:none;
+color:#818181;
+}
+
+footer a:hover{
+color:black;
+}
+.footersec{
+display:flex;
+justify-content:space-between;
+}
+
+.contact{
+background:orange;
+}
+.contact-info img{
+color:red;
+}
+.topbtn{
+position:fixed;
+width:135px;
+height:50px;
+background:#f2f2f2;
+bottom:1px;
+right:65px;
+text-decoration:none;
+text-align:center;
+line-height:50px;color:black;
+font-size:15px;
+}
+@media(max-width:503px){
+.fs p{
+font-size:12px;
+}
+}
+
+
+
+</style>
+  <title>Microsoft</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="main-body">
+ <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light ">
+  <a class="navbar-brand" href="#">
+  <img src="micro.jpg" class="logo">
+  </a>
+  <button class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Office</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">Xbox</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter" >Contact</a>
+      </li>
+	  
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      
+	   <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">All Microsoft<span class="sr-only">(current)</span></a>
+      </li>
+	  
+	   <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+      </li>
+	  
+	   <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+      </li>
+	        <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+      </li>
+	  
+	  </ul>
+	  
+    </form>
+  </div>
+</nav>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+ 
+     
+								
+								
+								
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+<div class="container contact">
+	<div class="row">
+		<div class="col-md-3 contact">
+			<div class="contact-info">
+				<img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+				<h2>Contact Us</h2>
+				<h4>We would love to hear from you !</h4>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="contact-form">
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="fname">First Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="lname">Last Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="email">Email:</label>
+				  <div class="col-sm-10">
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="comment">Comment:</label>
+				  <div class="col-sm-10">
+					<textarea class="form-control" rows="5" id="comment"></textarea>
+				  </div>
+				</div>
+				<div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-10">
+					<input type="submit" name="sub" value="Submit"></input>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="cr5.jpg" alt="Los Angeles" >
+     <div class="carousel-caption">
+        <h3>Surface  Pro</h3>
+        <p>Discover What's possible  every day with office 465</p>
+		<a href="#"><Button class="font-weight-bold">Shop Now ></Button></Button></a>
+      </div>    
+    </div>
+    <div class="carousel-item">
+      <img src="cr3.jpg" alt="Chicago" >
+      <div class="carousel-caption">
+       <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+		<a href="#"><Button class="font-weight-bold">Shop Now ></Button></Button></a>
+      </div>   
+    </div>
+   
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<main>
+<div class="">
+<div class="row">
+<div class="col-sm-12 col-lg-3 col-md-3">
+			
+			<div class="card">
+    <img class="card-img-top" src="laptop1.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Surface Laptop 4</h4>
+      <p class="card-text">Do it all with a perfect balance of sleek, ultra-thin design, multitasking speed and improved performance.</p>
+ <a href="#" >Shop now ></a></a>    </div>
+</div>	
+			
+</div>
+
+<div class="col-sm-12 col-lg-3 col-md-3">
+			<div class="card">
+    <img class="card-img-top" src="pcgame.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">PC Game Pass</h4>
+      <p class="card-text">Unlock 100+ great games and EA Play, plus get your first month for ₹50. Offer available to new subscribers only.</p>
+   <a href="#" >Join now ></a></a>
+    </div>
+</div>	
+			
+</div>
+
+<div class="col-sm-12 col-lg-3 col-md-3">
+			<div class="card">
+    <img class="card-img-top" src="surfacepro.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Surface Pro 8</h4>
+      <p class="card-text">Do more with a larger 13-inch touchscreen,faster connections and extra speed.Now available with Windows 11.</p>
+   <a href="#" >Learn more ></a></a>
+    </div>
+</div>	
+			
+</div>
+
+<div class="col-sm-12 col-lg-3 col-md-3">
+			<div class="card">
+    <img class="card-img-top" src="life.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Designed for life</h4>
+      <p class="card-text">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to you.</p>
+   <a href="#" >See if your PC is ready ></a></a>
+    </div>
+</div>	
+			
+</div>
+
+
+</div>
+
+</div>
+</main>
+<section class="mstyle">
+	<div class="mstore">
+	<h3>Microsoft Store</h3>
+	<p>Find the technology you need for home,school,work and fun</p>
+	<a href="#"><button class="font-weight-bold">Shop now  ></button></button></a>
+	</div>
+	
+</section>
+
+<section class="cardsec">
+<h3>For work</h3>
+
+<div class="row"><div class="col-sm-12 col-lg-3 col-md-3">
+			
+			<div class="card">
+    <img class="card-img-top" src="laptop1.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Surface Laptop 4</h4>
+      <p class="card-text">Do it all with a perfect balance of sleek, ultra-thin design, multitasking speed and improved performance.</p>
+ <a href="#" >Shop now ></a></a>    </div>
+</div>	
+			
+</div>
+
+<div class="col-sm-12 col-lg-3 col-md-3">
+			<div class="card">
+    <img class="card-img-top" src="pcgame.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">PC Game Pass</h4>
+      <p class="card-text">Unlock 100+ great games and EA Play, plus get your first month for ₹50. Offer available to new subscribers only.</p>
+   <a href="#" >Join now ></a></a>
+    </div>
+</div>	
+			
+</div>
+
+<div class="col-sm-12 col-lg-3 col-md-3">
+			<div class="card">
+    <img class="card-img-top" src="surfacepro.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Surface Pro 8</h4>
+      <p class="card-text">Do more with a larger 13-inch touchscreen,faster connections and extra speed.Now available with Windows 11.</p>
+   <a href="#" >Learn more ></a></a>
+    </div>
+</div>	
+			
+</div>
+
+<div class="col-sm-12 col-lg-3 col-md-3">
+			<div class="card">
+    <img class="card-img-top" src="life.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Designed for life</h4>
+      <p class="card-text">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring you closer to you.</p>
+   <a href="#" >See if your PC is ready></a></a>
+    </div>
+</div>	
+			
+</div>
+</div>
+</section>
+<section class="social">
+<div class="row">
+<div class="col-lg-2 highlight"  >
+<p id="highlight">Follow MoteenKhan</p>
+</div>
+<div class="col-lg-1">
+<a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+</div>
+<div class="col-lg-1">
+<a href="#"><i class="fa-brands fa-instagram fa-2x" ></i></a>
+</div>
+<div class="col-lg-1">
+<a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+</div>
+<a class="topbtn" href="#"><i class="fa-solid fa-arrow-up">&nbsp;Back to top</i></a>
+
+</div>
+</section>
+</div>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-2">
+<p>What's new</p>
+<ul>
+<li><a href="#">Microsoft 365</a></li>
+<li><a href="#">Surface Pro X</a></li>
+<li><a href="#">Surface Pro 7</a></li>
+<li><a href="#">Surface Laptop 3</a></li>
+<li><a href="#">Surface Laptop 3</a></li>
+<li><a href="#">Surface Laptop 3</a></li>
+<li><a href="#">Windows 11 apps</a></li>
+</ul>
+
+</div>
+<div class="col-lg-2">
+<p>Microsoft Store</p>
+<ul>
+<li><a href="#">Microsoft 365</a></li>
+<li><a href="#">Surface Pro X</a></li>
+<li><a href="#">Surface Pro 7</a></li>
+<li><a href="#">Surface Laptop 3</a></li>
+<li><a href="#">Windows 11 apps</a></li>
+<li><a href="#">Windows 11 apps</a></li>
+<li><a href="#">Windows 11 apps</a></li>
+<li><a href="#">Windows 11 apps</a></li>
+</ul>
+</div>
+
+<div class="col-lg-2">
+<p>Education</p>
+<ul>
+<li><a href="#">Microsoft 365</a></li>
+<li><a href="#">Surface Pro X</a></li>
+<li><a href="#">Surface Pro 7</a></li>
+<li><a href="#">Surface Laptop 3</a></li>
+<li><a href="#">Windows 11 apps</a></li>
+<li><a href="#">Windows 11 apps</a></li>
+<li><a href="#">Windows 11 apps</a></li>
+
+</ul>
+</div>
+
+<div class="col-lg-2">
+<p>Business</p>
+<ul>
+<li><a href="#">Microsoft in education</a></li>
+<li><a href="#">Microsoft Teams for Education</a></li>
+<li><a href="#">Microsoft 365 Education</a></li>
+<li><a href="#">Office Education</a></li>
+<li><a href="#">Educator training and development</a></li>
+<li><a href="#">Deals for students and parents</a></li>
+<li><a href="#">Azure for students</a></li>
+</ul>
+</div>
+
+<div class="col-lg-2">
+<p>Developer & IT</p>
+<ul>
+<li><a href="#">Microsoft 365</a></li>
+<li><a href="#">Surface Pro X</a></li>
+<li><a href="#">Surface Pro 7</a></li>
+<li><a href="#">Surface Laptop 3</a></li>
+<li><a href="#">Windows 11 apps</a></li>
+<li><a href="#">Windows 11 apps</a></li>
+<li><a href="#">Windows 11 apps</a></li>
+
+</ul>
+</div>
+
+<div class="col-lg-2">
+<p>Company</p>
+<ul>
+<li><a href="#">Microsoft in education</a></li>
+<li><a href="#">Microsoft Teams for Education</a></li>
+<li><a href="#">Microsoft 365 Education</a></li>
+<li><a href="#">Office Education</a></li>
+<li><a href="#">Educator training and development</a></li>
+<li><a href="#">Deals for students and parents</a></li>
+<li><a href="#">Azure for students</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-lg-4">
+<p><i class="fa-solid fa-earth-asia "></i>&nbsp;English (India)</p>
+</div>
+<div class="col-lg-8 footersec">
+<div class="fs">
+<p>Contact Microsoft</p>
+</div>
+
+<div class="fs">
+<p >Privacy</p>
+</div>
+<div class="fs">
+<p >Terms of use</p>
+</div>
+<div class="fs">
+<p>Tradermarks</p>
+</div>
+<div class="fs">
+<p>About our ads</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
