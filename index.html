@@ -88,7 +88,7 @@ margin:50px 0;
 }
 #highlight{
 color:grey;
-font-size:14px;
+font-size:18px;
 font-weight:bold;
 }
 .fa-instagram{
@@ -98,11 +98,12 @@ color:#e95950;
 .fa-facebook{
 color:#4267B2;
 }
+.fa-whatsapp{
+color:#25d366;
+}
 .fa-twitter{
 color:fa-twitter;
 }
-
-
 
 footer{
 background:#f2f2f2;
@@ -130,23 +131,48 @@ background:orange;
 .contact-info img{
 color:red;
 }
+
 .topbtn{
 position:fixed;
-width:135px;
-height:50px;
-background:#f2f2f2;
+width:40px;
+height:40px;
+background:orange;
 bottom:1px;
-right:65px;
+right:70px;
 text-decoration:none;
 text-align:center;
 line-height:50px;color:black;
 font-size:15px;
+border-radius:50%;
+color:white;
 }
+
 @media(max-width:503px){
 .fs p{
 font-size:12px;
 }
+
+.topbtn{
+
+right:30px;
+
 }
+}
+
+
+
+
+.whatsapp-icon {
+	margin-top:16px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:10px;
+     }
+  
+}
+
 
 
 
@@ -213,7 +239,7 @@ font-size:12px;
 	        <li class="nav-item active">
         <a class="nav-link" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
       </li>
-	  
+
 	  </ul>
 	  
     </form>
@@ -443,7 +469,10 @@ font-size:12px;
 <div class="col-lg-1">
 <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
 </div>
-<a class="topbtn" href="#"><i class="fa-solid fa-arrow-up">&nbsp;Back to top</i></a>
+<div class="col-lg-1">
+	  	  <a href="https://wa.me/+91-8080851510" class="whatsapp_float" target="_blank"> <i class="fa-brands fa-whatsapp fa-2x"></i>	</a>
+</div>
+<a class="topbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
 
 </div>
 </section>
@@ -555,9 +584,23 @@ font-size:12px;
 <div class="fs">
 <p>About our ads</p>
 </div>
+
 </div>
 </div>
 </div>
 </footer>
+
+<script>
+var topbutton=document.querySelector(".topbtn");
+topbutton.style.display="none";
+document.querySelector('body').onscroll=function(){
+if(window.scrollY>150){
+topbutton.style.display="block";
+}
+else{
+topbutton.style.display="none";
+}
+}
+</script>
 </body>
 </html>
